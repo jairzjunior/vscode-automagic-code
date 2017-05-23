@@ -2,7 +2,7 @@
   "name": "automagic-code",
   "displayName": "Automagic Code",
   "description": "Make your life easier to use Automagic Code with Mustache Logic-less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "jairzjunior",
   "engines": {
     "vscode": "^1.12.0"
