@@ -29,7 +29,7 @@ Create your template and generate class for the program language and design patt
 * `json-metadata-file`: File path contain a JSON metadata
 * `template-name`: Name of template
 * `template-mustache-file`: File with a template Mustache
-    * For generate a file separated using `---<EOF: {"nameFile": "{{file_name}}"}>---` in your template, where `file_name` should is present in `json-metadata-file` 
+    * To generate a file separated using `---<EOF: {"nameFile": "{{file_name}}"}>---` in your template, where `file_name` should is present in `json-metadata-file` 
 
 * `output-derectory`: Output directory for generated file
 
