@@ -1,7 +1,7 @@
 # Automagic code for Visual Studio Code
 
-[![Current Version](http://vsmarketplacebadge.apphb.com/version/jairzjunior.automagic-code.svg)](https://marketplace.visualstudio.com/items?itemName=jairzjunior.automagic-code)
-[![Install Count](http://vsmarketplacebadge.apphb.com/installs/jairzjunior.automagic-code.svg)](https://marketplace.visualstudio.com/items?itemName=jairzjunior.automagic-code)
+[![Current Version](https://vsmarketplacebadge.apphb.com/version/jairzjunior.automagic-code.svg)](https://marketplace.visualstudio.com/items?itemName=jairzjunior.automagic-code)
+[![Install Count](https://vsmarketplacebadge.apphb.com/installs/jairzjunior.automagic-code.svg)](https://marketplace.visualstudio.com/items?itemName=jairzjunior.automagic-code)
 
 Automagic Code is a plugin for Visual Studio Code to make life easier to use [Mustache Logic-less Templates](http://mustache.github.io/).
 

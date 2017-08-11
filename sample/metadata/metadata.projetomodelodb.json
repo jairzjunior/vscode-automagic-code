@@ -1,0 +1,362 @@
+{
+  "tables": [
+    {
+      "entity_name": "City",
+      "table_schema": "public",
+      "table_qualified_name": "public.city",
+      "colunas": [
+        {
+          "index": 1,
+          "attribute_name": "Id",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": null,
+          "column_qualified_name": "public.city.id",
+          "numeric_scale": 0,
+          "table_name": "city",
+          "column_default": "nextval('city_id_seq'::regclass)",
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "id"
+        },
+        {
+          "index": 2,
+          "attribute_name": "Name",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "NAME_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.city.name",
+          "numeric_scale": null,
+          "table_name": "city",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "name"
+        },
+        {
+          "index": 3,
+          "attribute_name": "StateId",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "STATE_ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": "true",
+          "column_qualified_name": "public.city.state_id",
+          "numeric_scale": 0,
+          "table_name": "city",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "state_id"
+        }
+      ],
+      "table_schema_const": "PUBLIC_SCHEMA",
+      "sequences": [
+        {
+          "sequence_name_const": "CITY_ID_SEQ",
+          "sequence_name": "city_id_seq",
+          "table_qualified_name": "public.city",
+          "sequence_qualified_name": "public.city_id_seq",
+          "sequence_column_name": "id",
+          "table_name": "city",
+          "schema_name": "public",
+          "sequence_column_name_const": "ID_COL"
+        }
+      ],
+      "table_name": "city",
+      "table_name_const": "CITY_TABLE",
+      "constraints": [
+        {
+          "constraint_schema": "public",
+          "foreign_table_name": "city",
+          "physical_full_name": "public.city.id",
+          "constraint_type": "PRIMARY KEY",
+          "table_name": "city",
+          "constraint_name": "city_pkey",
+          "foreign_column_name": "id",
+          "column_name": "id"
+        }
+      ]
+    },
+    {
+      "entity_name": "Person",
+      "table_schema": "public",
+      "table_qualified_name": "public.person",
+      "colunas": [
+        {
+          "index": 1,
+          "attribute_name": "Id",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": null,
+          "column_qualified_name": "public.person.id",
+          "numeric_scale": 0,
+          "table_name": "person",
+          "column_default": "nextval('person_id_seq'::regclass)",
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "id"
+        },
+        {
+          "index": 2,
+          "attribute_name": "FirstName",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "FIRST_NAME_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.first_name",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "first_name"
+        },
+        {
+          "index": 3,
+          "attribute_name": "LastName",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "LAST_NAME_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.last_name",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "last_name"
+        },
+        {
+          "index": 4,
+          "attribute_name": "Birthday",
+          "data_type": "Date",
+          "column_type": "date",
+          "column_name_const": "BIRTHDAY_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.birthday",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": 0,
+          "size": null,
+          "column_name": "birthday"
+        },
+        {
+          "index": 5,
+          "attribute_name": "Phone",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "PHONE_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.phone",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 15,
+          "column_name": "phone"
+        },
+        {
+          "index": 6,
+          "attribute_name": "Email",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "EMAIL_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.email",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 30,
+          "column_name": "email"
+        },
+        {
+          "index": 7,
+          "attribute_name": "CityId",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "CITY_ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.city_id",
+          "numeric_scale": 0,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "city_id"
+        },
+        {
+          "index": 8,
+          "attribute_name": "Street",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "STREET_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.street",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "street"
+        },
+        {
+          "index": 9,
+          "attribute_name": "ZipCode",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "ZIP_CODE_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.zip_code",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 10,
+          "column_name": "zip_code"
+        },
+        {
+          "index": 10,
+          "attribute_name": "District",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "DISTRICT_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.person.district",
+          "numeric_scale": null,
+          "table_name": "person",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "district"
+        }
+      ],
+      "table_schema_const": "PUBLIC_SCHEMA",
+      "sequences": [
+        {
+          "sequence_name_const": "PERSON_ID_SEQ",
+          "sequence_name": "person_id_seq",
+          "table_qualified_name": "public.person",
+          "sequence_qualified_name": "public.person_id_seq",
+          "sequence_column_name": "id",
+          "table_name": "person",
+          "schema_name": "public",
+          "sequence_column_name_const": "ID_COL"
+        }
+      ],
+      "table_name": "person",
+      "table_name_const": "PERSON_TABLE",
+      "constraints": [
+        {
+          "constraint_schema": "public",
+          "foreign_table_name": "person",
+          "physical_full_name": "public.person.id",
+          "constraint_type": "PRIMARY KEY",
+          "table_name": "person",
+          "constraint_name": "person_pkey",
+          "foreign_column_name": "id",
+          "column_name": "id"
+        }
+      ]
+    },
+    {
+      "entity_name": "State",
+      "table_schema": "public",
+      "table_qualified_name": "public.state",
+      "colunas": [
+        {
+          "index": 1,
+          "attribute_name": "Id",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": null,
+          "column_qualified_name": "public.state.id",
+          "numeric_scale": 0,
+          "table_name": "state",
+          "column_default": "nextval('state_id_seq'::regclass)",
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "id"
+        },
+        {
+          "index": 2,
+          "attribute_name": "Name",
+          "data_type": "string",
+          "column_type": "character varying",
+          "column_name_const": "NAME_COL",
+          "numeric_precision_radix": null,
+          "is_nullable": "true",
+          "column_qualified_name": "public.state.name",
+          "numeric_scale": null,
+          "table_name": "state",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": 50,
+          "column_name": "name"
+        },
+        {
+          "index": 3,
+          "attribute_name": "StateId",
+          "data_type": "int",
+          "column_type": "integer",
+          "column_name_const": "STATE_ID_COL",
+          "numeric_precision_radix": 2,
+          "is_nullable": "true",
+          "column_qualified_name": "public.state.state_id",
+          "numeric_scale": 0,
+          "table_name": "state",
+          "column_default": null,
+          "datetime_precision": null,
+          "size": null,
+          "column_name": "state_id"
+        }
+      ],
+      "table_schema_const": "PUBLIC_SCHEMA",
+      "sequences": [
+        {
+          "sequence_name_const": "STATE_ID_SEQ",
+          "sequence_name": "state_id_seq",
+          "table_qualified_name": "public.state",
+          "sequence_qualified_name": "public.state_id_seq",
+          "sequence_column_name": "id",
+          "table_name": "state",
+          "schema_name": "public",
+          "sequence_column_name_const": "ID_COL"
+        }
+      ],
+      "table_name": "state",
+      "table_name_const": "STATE_TABLE",
+      "constraints": [
+        {
+          "constraint_schema": "public",
+          "foreign_table_name": "state",
+          "physical_full_name": "public.state.id",
+          "constraint_type": "PRIMARY KEY",
+          "table_name": "state",
+          "constraint_name": "state_pkey",
+          "foreign_column_name": "id",
+          "column_name": "id"
+        }
+      ]
+    }
+  ]
+}
