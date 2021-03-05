@@ -1,21 +1,21 @@
 {    
-    "metadataJsonFile": "/automagic-code/metadata/metadata.projetomodelodb.json",
+    "metadataJsonFile": "metadata/metadata.projetomodelodb.json",
     "templates":
     [
         {
             "name" : "Models Template for CSharp",            
-            "mustacheFile": "/automagic-code/templates/CSharp.Model.ClassPerFile.mustache.cs",
-            "outDir": "/automagic-code/src/csharp/Models"            
+            "mustacheFile": "templates/CSharp.Model.ClassPerFile.mustache.cs",
+            "outDir": "src/csharp/Models"            
         },
         {
             "name" : "Models Template for Delphi",            
-            "mustacheFile": "/automagic-code/templates/Delphi.Persistence.Entity.ClassPerFile.mustache.pas",
-            "outDir": "/automagic-code/src/delphi/Models"
+            "mustacheFile": "templates/Delphi.Persistence.Entity.ClassPerFile.mustache.pas",
+            "outDir": "src/delphi/Models"
         },
         {
             "name" : "Models Template for Java",
-            "mustacheFile": "/automagic-code/templates/Java.Model.ClassPerFile.mustache.java",
-            "outDir": "/automagic-code/src/java/Models"
+            "mustacheFile": "templates/Java.Model.ClassPerFile.mustache.java",
+            "outDir": "src/java/Models"
         }
     ]    
 }
